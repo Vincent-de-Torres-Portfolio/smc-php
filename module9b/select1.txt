@@ -1,0 +1,34 @@
+MariaDB [demographics]> SELECT * FROM country_demographic;
++----+------------+----------------+------------------------+
+| id | language   | name           | population_in_millions |
++----+------------+----------------+------------------------+
+|  1 | English    | United States  |                    331 |
+|  2 | Mandarin   | China          |                   1400 |
+|  3 | Hindi      | India          |                   1360 |
+|  4 | Portuguese | Brazil         |                    213 |
+|  5 | Russian    | Russia         |                    146 |
+|  6 | English    | Nigeria        |                    206 |
+|  7 | Japanese   | Japan          |                    126 |
+|  8 | German     | Germany        |                     83 |
+|  9 | Spanish    | Mexico         |                    130 |
+| 10 | Afrikaans  | South Africa   |                     60 |
+| 11 | Filipino   | Philippines    |                    113 |
+| 12 | Indonesian | Indonesia      |                    273 |
+| 13 | Arabic     | Egypt          |                    104 |
+| 14 | English    | Canada         |                     38 |
+| 15 | Turkish    | Turkey         |                     82 |
+| 16 | French     | France         |                     65 |
+| 17 | English    | United Kingdom |                     68 |
+| 18 | Italian    | Italy          |                     60 |
+| 19 | Spanish    | Argentina      |                     45 |
+| 20 | Korean     | South Korea    |                     52 |
+| 21 | Vietnamese | Vietnam        |                     97 |
+| 22 | Persian    | Iran           |                     84 |
+| 23 | Thai       | Thailand       |                     69 |
+| 24 | Spanish    | Spain          |                     47 |
+| 25 | Urdu       | Pakistan       |                    225 |
+| 26 | Bengali    | Bangladesh     |                    166 |
+| 27 | Dutch      | Netherlands    |                     17 |
++----+------------+----------------+------------------------+
+
+27 rows in set (0.000 sec)

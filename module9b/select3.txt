@@ -1,0 +1,8 @@
+
+MariaDB [demographics]> SELECT * FROM country_demographic ORDER BY population_in_millions ASC LIMIT 1;
++----+----------+-------------+------------------------+
+| id | language | name        | population_in_millions |
++----+----------+-------------+------------------------+
+| 27 | Dutch    | Netherlands |                     17 |
++----+----------+-------------+------------------------+
+1 row in set (0.000 sec)

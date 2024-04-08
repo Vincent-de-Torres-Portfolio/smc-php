@@ -1,0 +1,316 @@
+body {
+    font-family: 'Outfit', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8fa;
+    color: #24292e;
+     justify-content: center;
+     align-items: center;
+    flex-direction: column;
+}
+
+ p{
+     max-width: 55ch;
+     padding-left: 15px;
+ }
+
+ main{
+     height: 80vh;
+     width: 80vw;
+     margin: 20px auto;
+ }
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    overflow: hidden;
+    margin: 13px auto;
+}
+
+ .header, .content, .left-pane, .right-pane, .footer {
+    box-sizing: border-box;
+}
+
+.header, .footer {
+    color: #fff;
+    padding: 16px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.left-pane, .right-pane {
+    width: 100%;
+}
+
+.left-pane {
+    background-color: #f6f8fa;
+    padding: 16px;
+}
+
+.right-pane {
+    background-color: #fff;
+    padding: 16px;
+}
+
+.footer {
+    background-color: #f6f8fa;
+    color: #586069;
+}
+
+ .form-control {
+    margin-bottom: 20px;
+}
+ main{
+     max-width: 800px;
+ }
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #5e5e62; /* GitHub's link color for labels */
+}
+
+.input-field {
+    font-family: 'Outfit',sans-serif;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-input {
+    margin-right: 8px;
+}
+
+.required-indicator {
+    color: red;
+    margin-left: 4px;
+}
+
+.caption-text {
+    color: #586069;
+    font-size: 12px;
+    padding-top: 5px;
+    margin: 5px 0;
+}
+
+.validation-message {
+    color: red;
+    margin-top: 5px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 767px) {
+    .form-control {
+        width: 100%;
+    }
+}
+
+
+
+
+ /*FORM STYLES*/
+form{
+    margin-top: 2rem;
+}
+#guestName {
+    display: flex;
+    width: 80vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+    fieldset{
+     border: none;
+     padding: 8px;
+ }
+
+  legend {
+     font-weight: bold;
+     font-size: 18px;
+     color: #0366d6;
+ }
+
+  label {
+     display: none;
+     margin-bottom: 8px;
+     color: #24292e;
+ }
+
+.input-field {
+     width: calc(100% - 8px);
+     display: inline-block;
+     margin-right: 16px;
+ }
+
+textarea{
+    font-family: 'Outfit',sans-serif;
+    padding: 8px;
+    resize: none;
+}
+
+ .floating-label {
+     position: relative;
+ }
+
+ .label {
+     position: absolute;
+     top: 50%;
+     left: 10px;
+     transform: translateY(-50%);
+     transition: transform 0.3s, font-size 0.3s;
+ }
+
+ .input-field:focus + .label,
+ .input-field:valid + .label,
+ .input-field:not(:placeholder-shown) + .label {
+     transform: translateY(-100%) scale(0.8);
+     font-size: 0.8em;
+ }
+
+ .form-buttons {
+     margin-top: 16px;
+ }
+
+ .submit-button, .clear-button {
+     padding: 8px 16px;
+     font-family: 'Outfit', sans-serif;
+     font-weight: 500;
+     background-color: #f6f8fa;
+     color: #23282e;
+     border: solid 1px rgb(208 215 222);
+     border-radius: 4px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+h2{
+    border-bottom: solid 1px   rgb(208 215 222);
+;
+
+}
+
+ /* Add this CSS for the sliding animation */
+ .error-list {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+     position: fixed;
+     top: 20px;
+     right: 20px;
+     z-index: 1000;
+ }
+
+ .error-list li {
+     background-color: #ff6961; /* Light red color for error messages */
+     color: #fff; /* White text color */
+     padding: 10px;
+     margin: 10px 0;
+     width: 350px;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     transform: translateY(-20px);
+     transition: opacity 0.5s ease, transform 0.5s ease;
+ }
+
+ .error-list li.slide-in {
+     opacity: 1;
+     transform: translateY(0);
+ }
+
+
+ .toast.slide-out {
+     opacity: 0;
+     transform: translateY(-20px);
+ }
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Adjust the column size as needed */
+    grid-template-rows: repeat(3,1fr);
+    height: 70%;
+    margin-bottom: 20px;
+    gap: 10px; /* Adjust the gap between items as needed */
+}
+.grid-container > *:nth-child(even) {
+    margin-left: 20px;
+    margin-top: 10px;
+    transform: scale(1.31);
+
+}
+
+.grid-container > *:nth-child(odd) {
+    margin-left: -12px;
+    margin-top: 20px;
+    transform: scale(.61);
+}
+.grid-container > *:nth-child(n+6):nth-child(-n+10) {
+    margin-left: 30px;
+    margin-top: 5px;
+    transform: scale(.8);
+
+}
+
+/* Different offset for counts 11-20 */
+.grid-container > *:nth-child(n+11):nth-child(-n+20) {
+    margin-left: -5px;
+    margin-top: 25px;
+}
+.grid-item {
+    width: 50px; /* Adjust the item width as needed */
+    height: 50px; /* Adjust the item height as needed */
+    background-color: #3498db; /* Adjust the background color as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.cookie-img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease; /* Added transition for smooth scaling effect */
+
+}
+
+.milestone {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 999;
+}
+
+.milestone.show {
+    transform: translateX(-50%) translateY(0);
+}
+
+
+.title-large-text{
+    font-size: 5em;
+}

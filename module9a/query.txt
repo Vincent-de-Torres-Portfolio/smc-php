@@ -1,0 +1,16 @@
+MariaDB [baseballteams]> SELECT * FROM teamstatistic;
++----------------------+------+------+-------+----------+
+| TeamName             | Game | Wins | Loses | Pennants |
++----------------------+------+------+-------+----------+
+| Arizona Diamondbacks | 4110 | 1998 |  2112 |        2 |
+| Colorado Rockies     | 4858 | 2260 |  2598 |        1 |
+| Miami Marlins        | 4850 | 2241 |  2609 |        2 |
+| Milwaukee Brewers    | 8680 | 4215 |  4461 |        1 |
+| New York Mets        | 9810 | 4727 |  5075 |        5 |
+| San Diego Padres     | 8684 | 4034 |  4648 |        2 |
+| Seattle Mariners     | 7389 | 3514 |  3873 |        0 |
+| Tampa Bay Rays       | 4108 | 2011 |  2097 |        2 |
+| Texas Rangers        | 9964 | 4740 |  5218 |        3 |
+| Toronto Blue Jays    | 7390 | 3687 |  3700 |        2 |
++----------------------+------+------+-------+----------+
+10 rows in set (0.002 sec)

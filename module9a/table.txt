@@ -1,0 +1,11 @@
+MariaDB [baseballteams]> DESCRIBE teamstatistic;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| TeamName | varchar(50) | NO   | PRI | NULL    |       |
+| Game     | int(11)     | YES  |     | NULL    |       |
+| Wins     | int(11)     | YES  |     | NULL    |       |
+| Loses    | int(11)     | YES  |     | NULL    |       |
+| Pennants | int(11)     | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+5 rows in set (0.001 sec)

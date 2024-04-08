@@ -1,0 +1,48 @@
+/**
+ * CSS Reset
+ * 
+ * This CSS reset normalizes default styling across HTML elements for improved consistency.
+ * It includes adjustments for box sizing, font size, margins, padding, font weight, and list styles.
+ * Additionally, it ensures responsive behavior for images.
+ * Feel free to customize or extend based on specific project requirements.
+ * 
+ * Reset includes:
+ * - Box sizing normalization
+ * - Font size reset to 16px
+ * - Margin, padding, and font weight reset for specified elements (body, headings, paragraphs, lists)
+ * - Removal of default list styles for ordered and unordered lists
+ * - Responsive behavior for images
+ */
+ 
+
+/* Box Sizing */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Margin, Padding, and Font */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* List Styles */
+ol, ul {
+  list-style: none;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+text-decoration:none;
+}

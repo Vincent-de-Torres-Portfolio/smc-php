@@ -1,0 +1,12 @@
+
+
+MariaDB [demographics]> SELECT * FROM country_demographic WHERE language = 'English';
++----+----------+----------------+------------------------+
+| id | language | name           | population_in_millions |
++----+----------+----------------+------------------------+
+|  1 | English  | United States  |                    331 |
+|  6 | English  | Nigeria        |                    206 |
+| 14 | English  | Canada         |                     38 |
+| 17 | English  | United Kingdom |                     68 |
++----+----------+----------------+------------------------+
+4 rows in set (0.000 sec)

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/typography.css" type="text/css" rel="stylesheet">
+    <link href="css/toast.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<h1 class="title-large-text">GUESTBOOK</h1>
+<h3 class="subtitle-text">
+  Leave your mark in our guestbook! Sign below to share your thoughts.
+</h3>
+<a class="caption-text" href="ShowGuestBook.php">Explore Guests</a>
+
+<form action="SignGuestBook.php" method="POST">
+    <div id="guestName">
+        <fieldset>
+            <label for="senderFirstName" class="label">First Name:</label>
+            <input placeholder="First Name" class="input-field" type="text" id="senderFirstName" name="firstName"  />
+        </fieldset>
+        <fieldset>
+            <label for="senderLastName" class="label">Last Name:</label>
+            <input placeholder="Last Name" class="input-field" type="text" id="senderLastName" name="lastName" />
+        </fieldset>
+        <input type="submit" name="Submit" class="submit-button" value="Sign" />
+    </div>
+</form>
+
+
+</body>
+</html>

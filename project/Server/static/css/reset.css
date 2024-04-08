@@ -1,0 +1,78 @@
+/**
+ * Additional CSS Reset
+ *
+ * This CSS reset includes further adjustments for various HTML elements.
+ * It addresses common styling issues and provides a more consistent starting point.
+ * Feel free to customize or extend based on specific project requirements.
+ *
+ * Reset includes:
+ * - Removal of default text-decoration for anchor elements
+ * - Remove underline for anchor elements on hover
+ * - Remove text indentation for paragraphs within blockquotes
+ * - Reset styles for form elements (input, button, select, textarea)
+ */
+
+/* Anchor Styles */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Blockquote Styles */
+blockquote p {
+    margin: 0;
+}
+
+/* Form Element Styles */
+input, button, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+}
+
+/* Remove the default focus outline on some browsers */
+input:focus, button:focus, select:focus, textarea:focus {
+    outline: none;
+}
+
+/* Additional Form Element Styles for Better Cross-browser Consistency */
+button {
+    cursor: pointer;
+}
+
+/* Disable default styling for buttons in some browsers */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* Ensure compatibility with older IE versions */
+button, input {
+    overflow: visible;
+}
+
+/* Remove inner padding and border in Firefox 4+ */
+button, select {
+    text-align: left;
+}
+
+/* Remove default vertical scrollbar in IE 10+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide the overflow in IE */
+input[type="search"] {
+    -webkit-appearance: none;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}

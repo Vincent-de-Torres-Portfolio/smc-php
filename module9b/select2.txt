@@ -1,0 +1,10 @@
+
+
+MariaDB [demographics]> SELECT * FROM country_demographic ORDER BY population_in_millions DESC LIMIT 1;
++----+----------+-------+------------------------+
+| id | language | name  | population_in_millions |
++----+----------+-------+------------------------+
+|  2 | Mandarin | China |                   1400 |
++----+----------+-------+------------------------+
+1 row in set (0.000 sec)
+
